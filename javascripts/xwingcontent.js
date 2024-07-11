@@ -2008,6 +2008,7 @@ exportObj.basicCardData = function() {
         skill: 4,
         points: 2,
         loadout: 5,
+        restrictions: [["FactionOrUnique", "Lando's Millennium Falcon", "Scum and Villainy"]],
         slots: ["Talent", "Crew", "Modification"]
       }, {
         name: "Outer Rim Pioneer",
@@ -2018,6 +2019,7 @@ exportObj.basicCardData = function() {
         skill: 3,
         points: 3,
         loadout: 7,
+        restrictions: [["FactionOrUnique", "Lando's Millennium Falcon", "Scum and Villainy"]],
         slots: ["Talent", "Crew", "Modification"]
       }, {
         name: "L3-37 (Escape Craft)",
@@ -2029,6 +2031,7 @@ exportObj.basicCardData = function() {
         points: 2,
         loadout: 4,
         keyword: ["Droid"],
+        restrictions: [["FactionOrUnique", "Lando's Millennium Falcon", "Scum and Villainy"]],
         slots: ["Crew", "Modification"]
       }, {
         name: "Autopilot Drone",
@@ -2041,6 +2044,7 @@ exportObj.basicCardData = function() {
         points: 1,
         loadout: 0,
         keyword: ["Droid"],
+        restrictions: [["FactionOrUnique", "Lando's Millennium Falcon", "Scum and Villainy"]],
         chassis: "Rigged Energy Cells",
         slots: []
       }, {
@@ -3750,8 +3754,8 @@ exportObj.basicCardData = function() {
         ship: "TIE/fo Fighter",
         skill: 3,
         points: 3,
-        loadout: 8,
-        slots: ["Talent", "Tech", "Tech", "Modification"]
+        loadout: 12,
+        slots: ["Talent", "Cannon", "Tech", "Tech", "Modification"]
       }, {
         name: '"Static"',
         id: 264,
@@ -5298,7 +5302,7 @@ exportObj.basicCardData = function() {
         points: 3,
         loadout: 10,
         keyword: ["Droid"],
-        slots: ["Missile", "Canon", "Crew", "Device", "Modification", "Configuration"]
+        slots: ["Missile", "Cannon", "Crew", "Device", "Modification", "Configuration"]
       }, {
         name: "212th Battalion Pilot",
         id: 412,
@@ -5824,9 +5828,9 @@ exportObj.basicCardData = function() {
         faction: "Scum and Villainy",
         ship: "BTL-A4 Y-wing",
         skill: 3,
-        points: 4,
-        loadout: 10,
-        slots: ["Talent", "Tech", "Turret", "Torpedo", "Missile", "Astromech", "Device", "Modification"]
+        points: 3,
+        loadout: 9,
+        slots: ["Talent", "Tech", "Turret", "Torpedo", "Astromech", "Device", "Modification"]
       }, {
         name: "Derek Klivian",
         id: 461,
