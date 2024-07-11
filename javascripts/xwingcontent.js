@@ -2008,7 +2008,43 @@ exportObj.basicCardData = function() {
         skill: 4,
         points: 2,
         loadout: 5,
-        restrictions: [["FactionOrUnique", "Lando's Millennium Falcon", "Scum and Villainy"]],
+        restriction_func: function(ship) {
+          var builder, shiplist, t, thing, things, upgrade, _i, _j, _len, _len1, _ref, _ref1, _ref2;
+          builder = ship.builder;
+          console.log('test', builder.uniques_in_use, "Lando's Millennium Falcon");
+          _ref = builder.uniques_in_use;
+          for (t in _ref) {
+            things = _ref[t];
+            if (t !== 'Slot') {
+              if (__indexOf.call((function() {
+                var _i, _len, _results;
+                _results = [];
+                for (_i = 0, _len = things.length; _i < _len; _i++) {
+                  thing = things[_i];
+                  _results.push(thing.canonical_name.getXWSBaseName());
+                }
+                return _results;
+              })(), 'landosmillenniumfalcon') >= 0) {
+                _ref1 = ship.builder.ships;
+                for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
+                  shiplist = _ref1[_i];
+                  _ref2 = shiplist.upgrades;
+                  for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
+                    upgrade = _ref2[_j];
+                    if ((upgrade.data != null) && (ship.pilot != null)) {
+                      if (upgrade.data.name === "Lando's Millennium Falcon") {
+                        ship.pilot.skill = shiplist.pilot.skill;
+                        break;
+                      }
+                    }
+                  }
+                }
+                return true;
+              }
+            }
+          }
+          return false;
+        },
         slots: ["Talent", "Crew", "Modification"]
       }, {
         name: "Outer Rim Pioneer",
@@ -2019,7 +2055,42 @@ exportObj.basicCardData = function() {
         skill: 3,
         points: 3,
         loadout: 7,
-        restrictions: [["FactionOrUnique", "Lando's Millennium Falcon", "Scum and Villainy"]],
+        restriction_func: function(ship) {
+          var builder, shiplist, t, thing, things, upgrade, _i, _j, _len, _len1, _ref, _ref1, _ref2;
+          builder = ship.builder;
+          _ref = builder.uniques_in_use;
+          for (t in _ref) {
+            things = _ref[t];
+            if (t !== 'Slot') {
+              if (__indexOf.call((function() {
+                var _i, _len, _results;
+                _results = [];
+                for (_i = 0, _len = things.length; _i < _len; _i++) {
+                  thing = things[_i];
+                  _results.push(thing.canonical_name.getXWSBaseName());
+                }
+                return _results;
+              })(), 'landosmillenniumfalcon') >= 0) {
+                _ref1 = ship.builder.ships;
+                for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
+                  shiplist = _ref1[_i];
+                  _ref2 = shiplist.upgrades;
+                  for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
+                    upgrade = _ref2[_j];
+                    if ((upgrade.data != null) && (ship.pilot != null)) {
+                      if (upgrade.data.name === "Lando's Millennium Falcon") {
+                        ship.pilot.skill = shiplist.pilot.skill;
+                        break;
+                      }
+                    }
+                  }
+                }
+                return true;
+              }
+            }
+          }
+          return false;
+        },
         slots: ["Talent", "Crew", "Modification"]
       }, {
         name: "L3-37 (Escape Craft)",
@@ -2030,8 +2101,44 @@ exportObj.basicCardData = function() {
         skill: 2,
         points: 2,
         loadout: 4,
+        restriction_func: function(ship) {
+          var builder, shiplist, t, thing, things, upgrade, _i, _j, _len, _len1, _ref, _ref1, _ref2;
+          builder = ship.builder;
+          console.log('test', builder.uniques_in_use, "Lando's Millennium Falcon");
+          _ref = builder.uniques_in_use;
+          for (t in _ref) {
+            things = _ref[t];
+            if (t !== 'Slot') {
+              if (__indexOf.call((function() {
+                var _i, _len, _results;
+                _results = [];
+                for (_i = 0, _len = things.length; _i < _len; _i++) {
+                  thing = things[_i];
+                  _results.push(thing.canonical_name.getXWSBaseName());
+                }
+                return _results;
+              })(), 'landosmillenniumfalcon') >= 0) {
+                _ref1 = ship.builder.ships;
+                for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
+                  shiplist = _ref1[_i];
+                  _ref2 = shiplist.upgrades;
+                  for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
+                    upgrade = _ref2[_j];
+                    if ((upgrade.data != null) && (ship.pilot != null)) {
+                      if (upgrade.data.name === "Lando's Millennium Falcon") {
+                        ship.pilot.skill = shiplist.pilot.skill;
+                        break;
+                      }
+                    }
+                  }
+                }
+                return true;
+              }
+            }
+          }
+          return false;
+        },
         keyword: ["Droid"],
-        restrictions: [["FactionOrUnique", "Lando's Millennium Falcon", "Scum and Villainy"]],
         slots: ["Crew", "Modification"]
       }, {
         name: "Autopilot Drone",
@@ -2043,8 +2150,44 @@ exportObj.basicCardData = function() {
         charge: 3,
         points: 1,
         loadout: 0,
+        restriction_func: function(ship) {
+          var builder, shiplist, t, thing, things, upgrade, _i, _j, _len, _len1, _ref, _ref1, _ref2;
+          builder = ship.builder;
+          console.log('test', builder.uniques_in_use, "Lando's Millennium Falcon");
+          _ref = builder.uniques_in_use;
+          for (t in _ref) {
+            things = _ref[t];
+            if (t !== 'Slot') {
+              if (__indexOf.call((function() {
+                var _i, _len, _results;
+                _results = [];
+                for (_i = 0, _len = things.length; _i < _len; _i++) {
+                  thing = things[_i];
+                  _results.push(thing.canonical_name.getXWSBaseName());
+                }
+                return _results;
+              })(), 'landosmillenniumfalcon') >= 0) {
+                _ref1 = ship.builder.ships;
+                for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
+                  shiplist = _ref1[_i];
+                  _ref2 = shiplist.upgrades;
+                  for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
+                    upgrade = _ref2[_j];
+                    if ((upgrade.data != null) && (ship.pilot != null)) {
+                      if (upgrade.data.name === "Lando's Millennium Falcon") {
+                        ship.pilot.skill = shiplist.pilot.skill;
+                        break;
+                      }
+                    }
+                  }
+                }
+                return true;
+              }
+            }
+          }
+          return false;
+        },
         keyword: ["Droid"],
-        restrictions: [["FactionOrUnique", "Lando's Millennium Falcon", "Scum and Villainy"]],
         chassis: "Rigged Energy Cells",
         slots: []
       }, {
